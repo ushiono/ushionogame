@@ -12,7 +12,7 @@
       searchURL = searchURL.substring(1, searchURL.length);
       var para = searchURL.split("&")[0].split("?")[1];
       var div=document.getElementById('show');
-      div.innerHTML=para;
-	alert(searchURL);
+      div.innerHTML=searchURL;
+	alert(searchURL+""+para);
     </script>
 </html>
