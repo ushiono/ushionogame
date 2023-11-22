@@ -4,13 +4,15 @@
     测试
   </title></head>
   <body>
-    <script>
-      var searchURL = window.location.search;
-	searchURL = searchURL.substring(1, searchURL.length);
-var targetPageId = searchURL.split("&")[0].split("=")[1];
-	    alert(targetPageId)
-    </script>
     <h1>测试呀！</h1>
     <div id="show">为什么</div>
   </body>
+<script>
+      var searchURL = window.location.search;
+      searchURL = searchURL.substring(1, searchURL.length);
+      var para = searchURL.split("&")[0].split("?")[1];
+      var div=document.getElementById('show');
+      div.innerHTML=para;
+	alert(para)
+    </script>
 </html>
